@@ -4,3 +4,13 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
+
+h1,
+p {
+  margin: 0;
+}
+
+button {
+  color: inherit;
+  font-family: inherit;
+}

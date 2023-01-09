@@ -1,0 +1,29 @@
+.Splash {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Splash-header {
+  font-size: 4rem;
+}
+
+.Splash-text {
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+
+.Splash-button {
+  margin-top: 50px;
+  background-color: transparent;
+  border-width: 3px;
+  border-color: #6fa2be;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.Splash-button:hover {
+  background-color: #6fa2be40;
+}
