@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/memory-game/static/css/main.ba4b0219.css",
+    "main.js": "/memory-game/static/js/main.b4462bb8.js",
+    "static/media/Samurai.jpg": "/memory-game/static/media/Samurai.82ea3fc277753b42ed0d.jpg",
+    "static/media/Medusa.jpg": "/memory-game/static/media/Medusa.510c76faebe8d2c4e727.jpg",
+    "static/media/Devil.jpg": "/memory-game/static/media/Devil.9d90f654581e45724eba.jpg",
+    "static/media/Viking.jpg": "/memory-game/static/media/Viking.bce8472ed0c841494cb2.jpg",
+    "static/media/Pirate.jpg": "/memory-game/static/media/Pirate.e95d5baee4e634804fbe.jpg",
+    "static/media/Cleopatra.jpg": "/memory-game/static/media/Cleopatra.e0024a774f89524c4c2a.jpg",
+    "static/media/SherlockHolmes.jpg": "/memory-game/static/media/SherlockHolmes.f7857c5fb58119b04e2e.jpg",
+    "static/media/Maharaja.jpg": "/memory-game/static/media/Maharaja.64feac2a3b8904e201b6.jpg",
+    "static/media/Steampunk.jpg": "/memory-game/static/media/Steampunk.fdacce062b2e81b91b83.jpg",
+    "static/media/CharlieChaplin.jpg": "/memory-game/static/media/CharlieChaplin.a896c10d9e28a1ce98c6.jpg",
+    "static/media/VanGogh.jpg": "/memory-game/static/media/VanGogh.4d7e7d347e39bfcda9fd.jpg",
+    "static/media/Tintin.jpg": "/memory-game/static/media/Tintin.58bce0325691fde38efe.jpg",
+    "static/media/AudreyHepburn.jpg": "/memory-game/static/media/AudreyHepburn.6911baf51e94ba3ff737.jpg",
+    "static/media/Ninja.jpg": "/memory-game/static/media/Ninja.a360da451267c0f77d75.jpg",
+    "static/media/SteveJobs.jpg": "/memory-game/static/media/SteveJobs.10d5907e8d7601bd8c36.jpg",
+    "static/media/Godfather.jpg": "/memory-game/static/media/Godfather.57fc9865fe17b7bcabe3.jpg",
+    "index.html": "/memory-game/index.html",
+    "main.ba4b0219.css.map": "/memory-game/static/css/main.ba4b0219.css.map",
+    "main.b4462bb8.js.map": "/memory-game/static/js/main.b4462bb8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ba4b0219.css",
+    "static/js/main.b4462bb8.js"
+  ]
+}
