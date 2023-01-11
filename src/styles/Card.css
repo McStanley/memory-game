@@ -1,0 +1,23 @@
+.Card {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border: 1px solid transparent;
+}
+
+.Card:hover {
+  border: 1px solid #d86852;
+}
+
+.Card-image {
+  width: 100%;
+}
+
+.Card-name {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  background-color: #5a5a5a80;
+}

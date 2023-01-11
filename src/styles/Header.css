@@ -1,0 +1,15 @@
+.Header {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.Header-title {
+  font-size: 3rem;
+}
+
+.Header-level {
+  font-size: 1.3rem;
+  text-decoration: underline solid #6fa2be;
+}

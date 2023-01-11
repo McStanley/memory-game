@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import Splash from './components/Splash';
+import Game from './components/Game';
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -11,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      {showSplash && <Splash closeSplash={closeSplash} />}
+      {showSplash ? <Splash closeSplash={closeSplash} /> : <Game />}
     </div>
   );
 }

@@ -1,0 +1,10 @@
+.Cards {
+  flex: 1;
+  max-width: 800px;
+  margin: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+}
