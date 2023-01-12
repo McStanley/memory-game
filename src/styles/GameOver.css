@@ -24,3 +24,7 @@
   border-radius: 5px;
   font-size: 2rem;
 }
+
+.GameOver-button:hover {
+  background-color: #6fa2be40;
+}
