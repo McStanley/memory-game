@@ -1,4 +1,5 @@
 .GameOver {
+  position: relative;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -27,4 +28,17 @@
 
 .GameOver-button:hover {
   background-color: #6fa2be40;
+}
+
+.GameOver-github {
+  height: 50px;
+  position: absolute;
+  bottom: 50px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.GameOver-github:hover {
+  background-color: #4078c0;
 }

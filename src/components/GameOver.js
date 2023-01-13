@@ -1,4 +1,5 @@
 import '../styles/GameOver.css';
+import GitHubLogo from '../assets/GitHub.png';
 
 function GameOver(props) {
   return (
@@ -8,6 +9,13 @@ function GameOver(props) {
       <button className="GameOver-button" onClick={props.restartGame}>
         New Game
       </button>
+      <a
+        href="https://github.com/McStanley"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={GitHubLogo} alt="GitHub" className="GameOver-github" />
+      </a>
     </div>
   );
 }
