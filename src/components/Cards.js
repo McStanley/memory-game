@@ -6,6 +6,7 @@ import shuffleArray from '../utils/shuffleArray';
 
 function Cards(props) {
   const [cards, setCards] = useState([]);
+  const [lastShuffleIds, setLastShuffleIds] = useState(null);
 
   const handleClick = (id) => {
     const selectedCard = cards.find((card) => card.id === id);
@@ -16,14 +17,25 @@ function Cards(props) {
     }
 
     setCards((prevCards) => {
-      const newCards = prevCards.map((card) => {
+      let newCards = prevCards.map((card) => {
         if (card.id === id) return { ...card, wasSelected: true };
         return card;
       });
 
+      let shuffleIds;
+
+      do {
+        newCards = shuffleArray(newCards);
+        shuffleIds = newCards.map((card) => card.id).join(',');
+      } while (shuffleIds === lastShuffleIds);
+
       return newCards;
     });
   };
+
+  useEffect(() => {
+    setLastShuffleIds(cards.map((card) => card.id).join(','));
+  }, [cards]);
 
   useEffect(() => {
     const cardsCount = 2 + props.level;
@@ -37,13 +49,16 @@ function Cards(props) {
   useEffect(() => {
     if (!cards.length) return;
 
+    const shuffleIds = cards.map((card) => card.id).join(',');
+
+    if (shuffleIds === lastShuffleIds) return;
+
     const allSelected = cards.every((card) => card.wasSelected);
 
     if (allSelected) {
-      setCards([]);
       levelUp();
     }
-  }, [cards, levelUp]);
+  }, [cards, lastShuffleIds, levelUp]);
 
   const cardElements = cards.map((card) => {
     return (
@@ -57,7 +72,7 @@ function Cards(props) {
     );
   });
 
-  return <div className="Cards">{shuffleArray(cardElements)}</div>;
+  return <div className="Cards">{cardElements}</div>;
 }
 
 export default Cards;
